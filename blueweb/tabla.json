@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "Ricardo",
+        "email": "ricardovillalobos0990@gmail.com",
+        "estado": false
+    },
+    {
+        "id": 2,
+        "nombre": "Andres",
+        "email": "nanoyly90@hotmail.com",
+        "estado": true
+    },
+    {
+        "id": 3,
+        "nombre": "Ignacio",
+        "email": "elrickiw17@gmail.com",
+        "estado": false
+    },
+    {
+        "id": 4,
+        "nombre": "Viilalba",
+        "email": "ricardovillalobos0990@gmail.com",
+        "estado": true
+    },
+    {
+        "id": 5,
+        "nombre": "Andres Ricardo",
+        "email": "villalobos0990@gmail.com",
+        "estado": false
+    }
+]
