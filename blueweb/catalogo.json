@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "Ricardito",
+        "estado": true
+    },
+    {
+        "id": 2,
+        "nombre": "Ricardo",
+        "estado": true
+    },
+    {
+        "id": 3,
+        "nombre": "Andres",
+        "estado": true
+    },
+    {
+        "id": 4,
+        "nombre": "Villalobos",
+        "estado": false
+    },
+    {
+        "id": 5,
+        "nombre": "Marulanda",
+        "estado": false
+    },
+    {
+        "id": 6,
+        "nombre": "Ignacio",
+        "estado": true
+    }
+]

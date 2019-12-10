@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        class Pelicula {
+            constructor(nombre, id) {
+                this.nombre = nombre;
+                this.id = id;
+            }
+
+            reproducir() {
+                return `Esta Ricardo viendo ${this.nombre} en el ID ${this.id} `;
+            }
+        }
+
+        class Serie extends Pelicula {
+            constructor(nombre, id, cap) {
+                super(nombre, id)
+                this.cap = cap;
+            }
+
+            reproducirCapitulo() {
+                return ` El capitulo reproducido es ${this.nombre} ID ${this.id} y el cap es ${this.cap}`;
+            }
+
+        }
+
+        var serieUno = new Serie("Batman", 3, 55)
+        var peliculaUno = new Pelicula("Harry Poter", 1);
+        console.log(peliculaUno.reproducir());
+        console.log(serieUno.reproducirCapitulo());
+    </script>
+</body>
+
+</html>
