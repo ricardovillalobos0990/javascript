@@ -14,8 +14,9 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    
     <div class="container my-5 text-center">
+        <h1>Consumir archivo json con fetch</h1>
         <button class="btn btn-danger w-100" onclick="traer()"> Agregar </button>
         <div class="mt-5">
             <table class="table">
@@ -27,7 +28,7 @@
                         <th scope="col">Status</th>
                     </tr>
                 </thead>
-                <tbody id="contenido">
+                <tbody id="contenido2">
 
                 </tbody>
             </table>
@@ -35,29 +36,7 @@
     </div>
 
     <script>
-        const contenido = document.querySelector("#contenido");
-        function traer() {
-            fetch("tabla.json")
-                .then(res => res.json())
-                .then(datos => {
-                    tabla(datos)
-                })
-        }
-
-        function tabla(datos) {
-            for (let valor of datos) {
-                contenido.innerHTML += `
-                
-                <tr>
-                    <th scope="row"> ${valor.id} </th>
-                    <td> ${valor.nombre} </td>
-                    <td> ${valor.email} </td>
-                    <td> ${valor.estado ? "Active" : "Desactivate"} </td>
-                </tr>
-
-                `
-            }
-        }
+        
 
     </script>
 

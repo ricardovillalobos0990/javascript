@@ -9,7 +9,7 @@ function traerDatos() {
 
         if (this.readyState == 4 && this.status == 200) {
 
-            console.log("Estado");
+            //console.log("Estado");
             let datos = JSON.parse(this.responseText);
             console.log(datos);
             let res = document.querySelector("#respuesta")

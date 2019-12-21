@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Required meta tags -->
@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
     <div class="container my-5 text-center">
-        <button class="btn btn-danger w-100" onclick="traer()"> Agregar </button>
+        <h1>Solicitudes con Ajax </h1>
+        <button class="btn btn-danger w-100 mt-5" onclick="traer()"> Agregar </button>
         <div class="mt-5" id="contenido">
 
         </div>
@@ -24,14 +24,14 @@
 
     <script>
         const contenido = document.querySelector("#contenido");
-        function traer() {
+        const traer = () => {
             fetch("https://randomuser.me/api")
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data.results["0"])
                     contenido.innerHTML = `
                     <img src="${data.results["0"].picture.large}" width="200px" class="img-fluid rounded-circle">
-                    <p> Nombre: ${data.results["0"].name.last}</p>
+                    <p class="display-4"> Nombre: ${data.results["0"].name.last}</p>
+                    <p class="display-4"> Celular: ${data.results["0"].cell}</p>
                     `
                 })
         }
